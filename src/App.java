@@ -1,8 +1,20 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
-        System.out.println("Welcome to Java programming.");
+        Animal a = new Cat();
+        a.sound();
+    }
+}
 
-        System.out.println("Java is a versatile and powerful programming language.");
+ 
+class Animal {
+    void sound() {
+    System.out.println("Some animal sound");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Meow");
     }
 }
